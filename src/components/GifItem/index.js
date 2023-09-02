@@ -1,3 +1,4 @@
+import './index.css'
 const GifItem = props => {
   const {item} = props
   const gifUrl = item.images.downsized.url

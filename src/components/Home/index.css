@@ -16,7 +16,10 @@ body {
 	font: 24px/1.5 system-ui, sans-serif;
 }
 
-
+.homeContainer{
+    background-color: #5763a5;
+    height: 100vh;
+}
 
 #search {
 	display: grid;
@@ -28,7 +31,7 @@ body {
 	align-content: center;
 	justify-items: stretch;
 	align-items: stretch;
-	background: hsl(0, 0%, 99%);
+	background:inherit;
 }
 
 #search input {
@@ -38,7 +41,7 @@ body {
 	appearance: none;
 	width: 100%;
 	height: 100%;
-	background: none;
+	background: inherit;
 	padding: 0 30px 0 60px;
 	border: none;
 	border-radius: 100px;
@@ -50,7 +53,7 @@ body {
 #search svg {
 	grid-area: search;
 	overflow: visible;
-	color: hsl(215, 100%, 50%);
+	color: white;
 	fill: none;
 	stroke: currentColor;
 }
