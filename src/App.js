@@ -1,29 +1,13 @@
-import React,{useEffect,useState} from 'react'
-import { auth } from './firebase';
-import UserAuth from './UserAuth';
-import Home from './Home';
+import Home from './components/Home';
+import UserAuth from './components/UserAuth';
+import {Switch, Route} from 'react-router-dom'
 
 const App = () => {
-  const [presentUser,setPresentUser] = useState(null);
-  useEffect(()=>{
-    auth.onAuthStateChanged(user =>{
-      if(user){
-      setPresentUser({
-        uid:user?.uid,
-        email:user?.email
-      })
-    }
-    else{
-      setPresentUser(null);
-    }
-    })
-  },[])
-  return (
-    <div>
-      <center>
-        {presentUser ? <Home presentUser={presentUser}/> : <UserAuth /> }
-      </center>
-    </div>
+  return(
+    <Switch>
+      <Route path="/login" component={UserAuth} />
+      <Route exact path="/" component={Home} />
+    </Switch>
   )
 }
 

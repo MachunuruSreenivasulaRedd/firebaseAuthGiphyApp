@@ -1,13 +1,14 @@
 import firebase from "firebase";
 
-var firebaseConfig = {
-    apiKey: "AIzaSyBXdx41wjOD9OZGwz9AvL2ZDRXMImvkGWU",
-    authDomain: "auth-9764f.firebaseapp.com",
-    projectId: "auth-9764f",
-    storageBucket: "auth-9764f.appspot.com",
-    messagingSenderId: "460079948542",
-    appId: "1:460079948542:web:73e79db4a70ed91dd8fbaf"
-  };
+const firebaseConfig = {
+  apiKey: "AIzaSyCM1pBFzp6bp4dGJ-9FpgMs_ogxu6sq0n0",
+  authDomain: "giphyapp-8a865.firebaseapp.com",
+  projectId: "giphyapp-8a865",
+  storageBucket: "giphyapp-8a865.appspot.com",
+  messagingSenderId: "378911482984",
+  appId: "1:378911482984:web:fbe1eb0167e0a537e3c7dd",
+  measurementId: "G-CP6DSE4K3M"
+};
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   const db = firebase.firestore();

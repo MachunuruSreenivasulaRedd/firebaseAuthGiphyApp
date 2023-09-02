@@ -17,3 +17,12 @@ input{
 button{
   padding: 10px;
 }
+.gifsContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.gifsImage{
+  width: 200px;
+  height: 200px;
+}
